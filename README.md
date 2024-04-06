@@ -18,13 +18,16 @@ secret.yaml:
 | Secret-Key | Hidden key | Hidden Secret key | 
 
 Instructions:
+
 Start up command
 kubectl apply -f deployment/
 
-Initilize Database
+Initilize Database:
+
 kubectl exec --stdin --tty pod/mysite-pod -- /bin/bash
 python manage.py migrate
 python manage.py createsuperuser
 
-Delete the Kubernetes pod
+Delete the Kubernetes pod:
+
 kubectl delete -f deployment/
