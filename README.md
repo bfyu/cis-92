@@ -20,12 +20,15 @@ secret.yaml:
 Instructions:
 
 Start up command
+
 kubectl apply -f deployment/
 
 Initilize Database:
 
 kubectl exec --stdin --tty pod/mysite-pod -- /bin/bash
+
 python manage.py migrate
+
 python manage.py createsuperuser
 
 Delete the Kubernetes pod:
