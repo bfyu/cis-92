@@ -18,18 +18,21 @@ secret.yaml:
 | Secret-Key | Hidden key | Hidden Secret key | 
 
 values-postgres.yaml:
+| --- | --- | --- | 
 |Variable Name	|Default Value	|Description|
 |database|	mysite|	PostgresSQL database name|
 |username|	mysiteuser|	PostgresSQL user name |
 |password|	this-is-a-bad|	Postgres  user password |
 
 Primary.Resources.Requests:
+| --- | --- | --- | 
 |Resource Name	|Default Value	Description|
 |memory	|512Mi	|Minimum memory requirement|
 |cpu	|500m	|Minimum CPU requirement|
 |ephemeral-storage	|100Mi|	Minimum storage requirement|
 
 Primary.Resources.limits
+| --- | --- | --- | 
 |Resource Name	|Default Value	Description|
 |memory	|512Mi	|Minimum memory requirement|
 |cpu	|500m	|Minimum CPU requirement|
